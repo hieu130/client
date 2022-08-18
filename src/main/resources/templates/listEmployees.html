@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="createNewEmployees"> Create New</a>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Wage</th>
+
+    </tr>
+    <tr th:each = "employees : ${listEmployees}">
+        <td th:text = "${listEmployees.name}"></td>
+        <td th:text = "${listEmployees.wage}"></td>
+        <td>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
